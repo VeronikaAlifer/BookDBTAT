@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+	targetNamespace="http://www.example.org/library_schema" xmlns:tns="http://www.example.org/library_schema"
+	elementFormDefault="qualified">
+
+	<xs:complexType name="item">
+		<xs:sequence>
+			<xs:element name="title" type="xs:string" />
+			<xs:element name="pages" type="xs:int" />
+		</xs:sequence>
+	</xs:complexType>
+
+	<xs:element name="bookstore">
+		<xs:complexType>
+			<xs:sequence>
+
+				<xs:element name="books">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="book" type="tns:item" maxOccurs="unbounded"/>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				
+				<xs:element name="newspapers">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="newspaper" type="tns:item" maxOccurs="unbounded"/>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				
+				<xs:element name="magazines">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="magazine" type="tns:item" maxOccurs="unbounded"/>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	
+</xs:schema>

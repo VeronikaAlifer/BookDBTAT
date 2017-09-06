@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bookstore xmlns="http://www.example.org/library_schema"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.example.org/library_schema Library_Schema.xsd">
+	
+	<books>
+		<book>
+			<title>Everyday Italian</title>
+			<pages>123</pages>
+		</book>
+		<book>
+			<title>Harry Potter</title>
+			<pages>456</pages>
+		</book>
+	</books>
+	
+	<newspapers>
+		<newspaper>
+			<title>The Times</title>
+			<pages>13</pages>
+		</newspaper>
+		<newspaper>
+			<title>Daily Express</title>
+			<pages>23</pages>
+		</newspaper>
+	</newspapers>
+	
+	<magazines>
+		<magazine>
+			<title>Vogue</title>
+			<pages>245</pages>
+		</magazine>
+		<magazine>
+			<title>Cosmopolitan</title>
+			<pages>256</pages>
+		</magazine>
+	</magazines>
+
+</bookstore>
